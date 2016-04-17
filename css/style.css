@@ -1,0 +1,549 @@
+@charset "utf-8";
+/* CSS Document */
+body,html{
+	width:100%;
+	height:100%;	
+}
+body{
+	overflow:hidden;
+}
+.gps{
+	position:fixed;
+	right:30px;
+	top:50%;
+	margin-top:-80px;
+	z-index:2;	
+}
+.gps .current{
+	background:red;
+	border: 0;
+}
+.gps li{
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	margin-bottom:10px;；
+	 :pointer;
+	border: 1px solid #ccc;
+}
+.doc{ width:100%; height:100%; position:absolute; left:0; top:0; z-index:1;}
+.doc>div{position:relative; width:100%; height:100%; box-sizing:border-box;}
+.doc>div:nth-of-type(1){ background:url(../images/index.jpg) no-repeat center center; background-size:100% 100%; z-index:1;}
+.doc>div:nth-of-type(2){ background:url(../images/surrent.png) no-repeat center center; background-size:100% 100%; z-index:1;}
+.doc>div:nth-of-type(3){ background:url(../images/surrent01.png) no-repeat center center; background-size:100% 100%; z-index:1;}
+.doc>div:nth-of-type(4){ background:url(../images/surrent02.png) no-repeat center center; background-size:100% 100%;  z-index:1;}
+.doc>div:nth-of-type(5){ background:url(../images/5.png) no-repeat center center; background-size:100% 100%; z-index:1;}
+.doc>div:nth-of-type(6){ background:url(../images/surrent6.png) no-repeat center center; background-size:100% 100%;  z-index:1;}
+.doc>div:nth-of-type(7){ background:url(../images/surrent5.png) no-repeat center center; background-size:100% 100%; z-index:1;}
+
+
+/*screen1*/
+.screen1{
+	position:relative;
+}
+.screen1 button{
+	background:url(../images/yinyue.png);
+	width:50px;
+	height:50px;
+	
+	position: absolute;
+	right:3%;
+	top:3%;
+	cursor: pointer;
+	
+	-webkit-animation:miao 8s infinite linear;
+	-webkit-transform:rotate(360deg);
+	-webkit-transform-origin:center;
+
+	-moz-animation:miao 8s infinite linear;
+	-moz-transform:rotate(360deg);
+	-moz-transform-origin:center;
+
+	-o-animation:miao 8s infinite linear;
+	-o-transform:rotate(360deg);
+	-o-transform-origin:center;
+}
+
+@-webkit-keyframes miao{
+	from{ transform:rotate(0)}
+	to{ transform:rotate(360deg)}
+}
+@-moz-keyframes miao{
+	from{ transform:rotate(0)}
+	to{ transform:rotate(360deg)}
+}
+@-o-keyframes miao{
+	from{ transform:rotate(0)}
+	to{ transform:rotate(360deg)}
+}
+
+.screen1 .miao{
+	width: 270px;
+	height:247px;
+	background:url(../images/miao.png) no-repeat center center;
+	position:absolute;
+	left:50%;
+	bottom:5%;
+	-webkit-animation:miao 8s infinite linear;
+	-webkit-transform:rotate(360deg);
+	-webkit-transform-origin:center;
+
+	-moz-animation:miao 8s infinite linear;
+	-moz-transform:rotate(360deg);
+	-moz-transform-origin:center;
+
+	-o-animation:miao 8s infinite linear;
+	-o-transform:rotate(360deg);
+	-o-transform-origin:center;
+}
+.screen1 .title{
+	position: absolute;
+	left:36%;
+	top:10%;
+	transition:all 2s;
+}
+.screen1.no .title{
+	margin-top:-500px;
+}
+
+.screen1 .welcome{
+	position: absolute;
+	left:45%;
+	top:40%;
+	transition:all 2s;
+}
+.screen1.no .welcome{
+	margin-left:-1000px;
+	transform:rotate(360deg);
+}
+
+.screen1 .welcome:hover{
+	transform:rotate(360deg) scale(1.5,1.5);
+}
+.screen1 .aside{
+	position:absolute;
+	left:10%;
+	top:0;
+	transition:all 2s;
+}
+.screen1.no .aside{
+	margin-top:-1000px;
+}
+
+
+/*screen2*/
+.screen2{position:relative; overflow: hidden;}
+.screen2 .title{
+	position: absolute;
+	left:50%;
+	top:2%;
+	margin-left:-118px;
+	transition:all 2s;
+}
+.screen2.no .title{
+	margin-left:-1000px;
+	transform:rotate(180deg);
+}
+
+.screen2 .box1{
+	width: 386px;
+	height: 506px;
+	position:absolute;
+	left:0;
+	top:10%;
+	transition:all 1s;
+}
+.screen2.no .box1{
+	margin-left:-1000px;
+}
+.screen2 .box2{
+	width: 386px;
+	height: 506px;
+	position:absolute;
+	left:23%;
+	top:10%;
+	transition:all 2s;
+}
+.screen2.no .box2{
+	margin-left:-1000px;
+}
+.screen2 .box3{
+	width: 386px;
+	height: 506px;
+	position:absolute;
+	left:50%;
+	top:10%;
+	transition:all 3s;
+}
+.screen2.no .box3{
+	margin-left:1000px;
+}
+.screen2 .box4{
+	width: 386px;
+	height: 506px;
+	position:absolute;
+	left:73%;
+	top:10%;
+	transition:all 1s;
+}
+.screen2.no .box4{
+	margin-left:1000px;
+}
+
+/*screen3*/
+
+.screen3 { position: relative; overflow: hidden;}
+.screen3 .title{
+	position: absolute;
+	left:50%;
+	top:2%;
+	margin-left:-118px;
+	transition:all 2s;
+}
+.screen3.no .title{
+	margin-left:-1000px;
+	transform:rotate(180deg);
+}
+
+.bg21 { position: absolute; left: 50%;top:50%; width: 819px; height: 250px; background: url(../images/bg21.png) left 0 no-repeat; transition: all 1s;  opacity:1; margin-left:-680px; margin-bottom: 70px; transition-delay: 0.7s;}
+.bg22 { position: absolute; left: 50%; top:50%; width: 819px; height: 299px; margin-bottom: 70px; background: url(../images/bg22.png) right 0 no-repeat; transition: all 1s; opacity:1; margin-left:-250px; transition-delay: 0.7s;}
+.bg23 { position: absolute; left: 50%; top:50%; margin-left: -200px; margin-top:-520px; transition: all 2s; perspective:3500px; opacity:1; transition-delay: 0.7s;}
+.bg23 ul{ position:relative; width:400px; height:200px; margin:400px auto; transform-style:preserve-3d; transform:rotateX(-20deg);
+animation:dh 25s linear infinite;
+-webkit-animation: dh 25s linear infinite;
+-moz-animation: dh 25s linear infinite;
+-o-animation: dh 25s linear infinite;
+-ms-animation: dh 25s linear infinite;
+}
+@keyframes dh{	
+	0%{ transform:rotateX(-20deg) rotateY(0deg)}
+	100%{ transform:rotateX(-20deg) rotateY(360deg)}
+}
+@-webkit-keyframes dh {
+	0%{ transform:rotateX(-20deg) rotateY(0deg)}
+	100%{ transform:rotateX(-20deg) rotateY(360deg)}
+}
+@-moz-keyframes dh {
+	0%{ transform:rotateX(-20deg) rotateY(0deg)}
+	100%{ transform:rotateX(-20deg) rotateY(360deg)}
+}
+@-o-keyframes dh {
+	0%{ transform:rotateX(-20deg) rotateY(0deg)}
+	100%{ transform:rotateX(-20deg) rotateY(360deg)}
+}
+@-ms-keyframes dh {
+	0%{ transform:rotateX(-20deg) rotateY(0deg)}
+	100%{ transform:rotateX(-20deg) rotateY(360deg)}
+}
+.bg23 ul:hover{ animation-play-state:paused;}
+.bg23 ul li{width:200px; transition:all 1s; height:200px; position:absolute; left:0; top:0; /* transform:rotateX(0deg) translateZ(300px) */}
+.bg23 ul li:nth-of-type(1){transform:rotateY(0deg) translateZ(400px)}
+.bg23 ul li:nth-of-type(2){transform:rotateY(51deg) translateZ(400px)}
+.bg23 ul li:nth-of-type(3){ transform:rotateY(102deg) translateZ(400px)}
+.bg23 ul li:nth-of-type(4){transform:rotateY(153deg) translateZ(400px)}
+.bg23 ul li:nth-of-type(5){transform:rotateY(204deg) translateZ(400px)}
+.bg23 ul li:nth-of-type(6){transform:rotateY(255deg) translateZ(400px)}
+.bg23 ul li:nth-of-type(7){transform:rotateY(306deg) translateZ(400px)}
+
+
+
+/*screen4*/
+.screen4{position:relative;}
+
+.screen4 .title{
+	position: absolute;
+	left:50%;
+	top:2%;
+	margin-left:-118px;
+	transition:all 2s;
+}
+.screen4.no .title{
+	margin-left:-1000px;
+	transform:rotate(180deg);
+}
+/*无缝滚动*/
+.screen4 .con{
+	position: absolute;
+	width: 785px;
+	height: 465px;
+	background:url(../images/surrent003.png);
+	left:50%;
+	top:50%;
+	margin:-180px 0 0 -392px;
+}
+.screen4 .con .all{width:700px; height:422px; margin:25px auto; overflow:hidden; position:relative;}
+.screen4 .con .all ul{ 
+	width:2500px; 
+	position:absolute; 
+	left:0; 
+	top:0; 
+	animation:name 20s linear infinite;
+	-o-animation:name 20s linear infinite;
+	-webkit-animation:name 20s linear infinite;
+	-moz-animation:name 20s linear infinite;
+	-ms-animation:name 20s linear infinite;
+}
+@keyframes name{
+	0%{margin-left:0;}	
+	100%{margin-left:-1652px;}
+}
+@-webkit-keyframes name{
+	0%{margin-left:0;}	
+	100%{margin-left:-1652px;}
+}
+@-moz-keyframes name{
+	0%{margin-left:0;}	
+	100%{margin-left:-1652px;}
+}
+@-o-keyframes name{
+	0%{margin-left:0;}	
+	100%{margin-left:-1652px;}
+}
+@-ms-keyframes name{
+	0%{margin-left:0;}	
+	100%{margin-left:-1652px;}
+}
+.screen4 .con .all ul:hover{
+	animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+	-moz-animation-play-state:paused;
+	-o-animation-play-state:paused;
+	-ms-animation-play-state:paused;
+}
+.screen4 .con .all li{ float:left; cursor:pointer;}
+
+/*screen5*/
+.screen5{position:relative;}
+.screen5 .title{
+	position: absolute;
+	left:50%;
+	top:2%;
+	margin-left:-118px;
+	transition:all 2s;
+}
+.screen5.no .title{
+	margin-left:-1000px;
+	transform:rotate(180deg);
+}
+.screen5 .bg{
+	position: absolute;
+	left:50%;
+	margin-left:-500px;
+}
+.screen5 ul{
+	width:900px;
+	height:500px;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-450px;
+	margin-top:-190px;
+	border-radius:150px;
+	background:url(../images/icon.png) no-repeat center center;
+	transition:all 3s;
+}
+.screen5.no ul{
+	margin-top:400px;
+}
+
+.screen5 ul li:nth-of-type(1){
+	position: absolute;
+	left:5%;
+	top:0;
+	cursor: pointer;
+}
+
+.screen5 ul li span{
+    background: rgba(0, 0, 0, 0) radial-gradient(ellipse farthest-corner at center center , rgba(255, 255, 255, 0.56) 0%, rgba(241, 210, 194, 1) 100%) repeat scroll 0 0;
+     color: rgba(27, 54, 81, 0.8);
+    font-size: 24px;
+    height: 200px;
+    left: 10px;
+    line-height:200px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+    top: 10px;
+    transition: opacity 0.3s linear 0s;
+    width:195px;
+    border-radius:100px;
+}
+.screen5 ul li:nth-of-type(2){
+	position: absolute;
+	left:5%;
+	bottom:0;
+	cursor: pointer;
+}
+.screen5 ul li:nth-of-type(3){
+	position: absolute;
+	left:40%;
+	top:0;
+	cursor: pointer;
+}
+.screen5 ul li:nth-of-type(4){
+	position: absolute;
+	left:40%;
+	bottom:0;
+	cursor: pointer;
+}
+.screen5 ul li:nth-of-type(5){
+	position: absolute;
+	top:0;
+	right:5%;
+	cursor: pointer;
+}
+.screen5 ul li:nth-of-type(6){
+	position: absolute;
+	right:5%;
+	bottom:0;
+	cursor: pointer;
+}
+
+/*screen6*/
+.screen6{position:relative;}
+
+.screen6 .title{
+	position: absolute;
+	left:50%;
+	top:2%;
+	margin-left:-118px;
+	transition:all 2s;
+}
+.screen6.no .title{
+	margin-left:-1000px;
+	transform:rotate(180deg);
+}
+.screen6 ul{
+	width:1200px;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-450px;
+	margin-top:-150px;
+}
+.screen6 ul li{
+	float:left;
+	margin-right:5px;
+	cursor: pointer;
+}
+
+
+.screen6 ul li:hover{
+	animation:ping01 0.3s linear; 
+	-webkit-animation:ping01 0.3s linear;
+	-moz-animation:ping01 0.3s linear;
+	-o-animation:ping01 0.3s linear;
+	-ms-animation:ping01 0.3s linear;
+}
+@keyframes ping01{	
+	0%{transform:translateX(0px)}
+	25%{transform:translateX(10px)}
+	50%{transform:translateX(0px)}
+	75%{transform:translateX(10px)}
+	100%{transform:translateX(0px)}
+}
+@-webkit-keyframes ping01{	
+	0%{transform:translateX(0px)}
+	25%{transform:translateX(10px)}
+	50%{transform:translateX(0px)}
+	75%{transform:translateX(10px)}
+	100%{transform:translateX(0px)}
+}
+@-moz-keyframes ping01{	
+	0%{transform:translateX(0px)}
+	25%{transform:translateX(10px)}
+	50%{transform:translateX(0px)}
+	75%{transform:translateX(10px)}
+	100%{transform:translateX(0px)}
+}
+@-o-keyframes ping01{	
+	0%{transform:translateX(0px)}
+	25%{transform:translateX(10px)}
+	50%{transform:translateX(0px)}
+	75%{transform:translateX(10px)}
+	100%{transform:translateX(0px)}
+}
+@-ms-keyframes ping01{	
+	0%{transform:translateX(0px)}
+	25%{transform:translateX(10px)}
+	50%{transform:translateX(0px)}
+	75%{transform:translateX(10px)}
+	100%{transform:translateX(0px)}
+}
+
+
+/*screen7*/
+.screen7{position:relative; overflow: hidden;}
+
+.screen7 .title{
+	position: absolute;
+	left:50%;
+	top:2%;
+	margin-left:-118px;
+	transition:all 2s;
+}
+.screen7.no .title{
+	margin-left:-1000px;
+	transform:rotate(180deg);
+}
+
+.screen7 .lian{
+	position: absolute;
+	left:45%;
+	top:25%;
+	transition:all 3s;
+}
+.screen7.no .lian{
+	margin-bottom:-500px;
+}
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+.screen7 .box{
+	position: absolute;
+	left:160px;
+	top:0;
+}
+html{
+	background-color: #d6dee1;
+	background-image: -moz-radial-gradient(circle closest-corner, #f6f9fa 0%, #d6dee1 100%);
+	background-image: -webkit-radial-gradient(circle closest-corner, #f6f9fa 0%, #d6dee1 100%);
+	background-image: radial-gradient(circle closest-corner, #f6f9fa 0%, #d6dee1 100%);
+}
+/*----------------------------
+	Photos
+-----------------------------*/
+
+#photos{
+	margin:0 auto;
+	padding-top:120px;
+	width:450px;
+	position:relative;
+}
+
+#photos li{
+	position:absolute;
+	width:450px;
+	height:450px;
+	overflow:hidden;
+	background-color:#fff;
+	box-shadow: 1px 1px 1px #ccc;
+	z-index:10;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+#photos li a{
+	position:absolute;
+	top:6px;
+	left:6px;
+	right:6px;
+	bottom:6px;
+	background-size: cover;
+	text-indent:-9999px;
+	overflow:hidden;
+}
