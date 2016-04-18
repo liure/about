@@ -41,6 +41,23 @@ body{
 .screen1{
 	position:relative;
 }
+.screen1 .yinyue{
+	width:50px;
+	height:49px;
+	position: absolute;
+	right:3%;
+	top:3%;
+	cursor: pointer;
+	overflow: hidden;
+}
+.screen1 .zhiye{
+	position: absolute;
+	left:30%;
+	bottom:10%;
+	font-size:20px;
+	font-weight:bold;
+	color:red;
+}
 .screen1 button{
 	background:url(../images/yinyue.png);
 	width:50px;
@@ -125,6 +142,13 @@ body{
 	left:10%;
 	top:0;
 	transition:all 2s;
+	width:157px;
+	height:569px;
+	background:url(../images/aside.png);
+	padding: 70px 22px 0 26px;
+}
+.screen1 .aside .wei{
+	margin-top:20px;
 }
 .screen1.no .aside{
 	margin-top:-1000px;
@@ -146,45 +170,65 @@ body{
 }
 
 .screen2 .box1{
-	width: 386px;
-	height: 506px;
+	width: 390px;
+	height: 607px;
 	position:absolute;
+	background:url(../images/1.1.png);
 	left:0;
 	top:10%;
 	transition:all 1s;
+}
+.screen2 .box1 p{
+	margin:324px 0 0 126px;
+	width:150px;
 }
 .screen2.no .box1{
 	margin-left:-1000px;
 }
 .screen2 .box2{
-	width: 386px;
-	height: 506px;
+	width: 390px;
+	height: 607px;
 	position:absolute;
 	left:23%;
 	top:10%;
 	transition:all 2s;
+	background:url(../images/2.png);
 }
 .screen2.no .box2{
 	margin-left:-1000px;
 }
+.screen2 .box2 p{
+	margin:324px 0 0 126px;
+	width:150px;
+}
 .screen2 .box3{
-	width: 386px;
-	height: 506px;
+	width: 390px;
+	height: 607px;
 	position:absolute;
 	left:50%;
 	top:10%;
 	transition:all 3s;
+	background:url(../images/3.png);
+}
+.screen2 .box3 p{
+	margin:324px 0 0 126px;
+	width:150px;
 }
 .screen2.no .box3{
 	margin-left:1000px;
 }
 .screen2 .box4{
-	width: 386px;
-	height: 506px;
+	width: 390px;
+	height:607px;
 	position:absolute;
 	left:73%;
 	top:10%;
 	transition:all 1s;
+	background:url(../images/4.4.png);
+}
+.screen2 .box4 p{
+	margin:324px 0 0 126px;
+	width:150px;
 }
 .screen2.no .box4{
 	margin-left:1000px;
@@ -235,7 +279,13 @@ animation:dh 25s linear infinite;
 	0%{ transform:rotateX(-20deg) rotateY(0deg)}
 	100%{ transform:rotateX(-20deg) rotateY(360deg)}
 }
-.bg23 ul:hover{ animation-play-state:paused;}
+.bg23 ul:hover{ 
+		animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+	-moz-animation-play-state:paused;
+	-o-animation-play-state:paused;
+	-ms-animation-play-state:paused;
+}
 .bg23 ul li{width:200px; transition:all 1s; height:200px; position:absolute; left:0; top:0; /* transform:rotateX(0deg) translateZ(300px) */}
 .bg23 ul li:nth-of-type(1){transform:rotateY(0deg) translateZ(400px)}
 .bg23 ul li:nth-of-type(2){transform:rotateY(51deg) translateZ(400px)}
@@ -493,6 +543,18 @@ animation:dh 25s linear infinite;
 	left:45%;
 	top:25%;
 	transition:all 3s;
+	width:582px;
+	height:333px;
+	background:url(../images/lianx.png);
+}
+.screen7 .lian ul{
+	margin:96px 0 0 236px;
+}
+.screen7 .lian ul li{
+	height:50px;
+	line-height:50px;
+	font-size:20px;
+	font-weight:bold;
 }
 .screen7.no .lian{
 	margin-bottom:-500px;

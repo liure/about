@@ -28,8 +28,18 @@ $(function(){
 		},300)
 	})
 	
-   var isPlaying = false; function play() { var player = document.querySelector('#test'); if (isPlaying) { player.pause(); player.src = ''; } else { player.src = 'audio/test.mp3'; player.play(); } }
-
+  
+//音乐开关
+	$('.screen1 .play').click(function(e) {
+       	$('audio').get(0).pause();
+       	$(this).css('display', 'none');
+       	$('.screen1 .pause').css('display', 'block');
+	});
+	$('.screen1 .pause').click(function(e) {
+       $('audio').get(0).play();
+       $(this).css('display', 'none');	
+       $('.screen1 .play').css('display', 'block');
+	});
 
 
 
