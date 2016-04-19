@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:none;}
+#header{width:100%; height:50px; background:#08B131; line-height:50px; text-align:center;}
+#header:after{content:'绿色食品网'; font-size:25px; color:#fff;}
+#nav{height:auto; background:green; margin:10px 0; overflow:hidden;}
+#nav ul{background:none; line-height:60px; height:auto;}
+#nav ul li{background:none; padding:0 10px; width:auto;}
+#banner{display:none;}
+
+
+
+.all{display:block; width:100%; height:auto; border:1px solid #ccc; margin:0 auto;}
+.all li img{ display:block; width:100%; height:auto;}
+.all .display{ width:100%; height:auto; overflow:hidden; position:relative;}
+.all ul li{ display:none;}
+.all ul .current{ display:block;}
+.all ol{ position:absolute; right:10px; bottom:10px;}
+.all ol li{ width:20px; height:20px; background:#fff; border:1px solid #ccc; line-height:20px; text-align:center; float:left; margin-left:10px; cursor:pointer;}
+.all .current{ background:yellow;}
+
+
+#con .up li{width:98%; height:auto; padding-bottom:10px;}
+
+.down .down02 li{width:100%; margin:10px 0;}
+#con .down>div{background:none;}
+#footer{background:none; height:auto; overflow:hidden;}
+#footer .footer_in{height:auto;}
+#footer h2{display:none;}
+ 
+
+
+

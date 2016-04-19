@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>绿色食品</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/pad.css" type="text/css" media="(max-width:979px)" />
+<link rel="stylesheet" href="css/phone.css" type="text/css" media="(max-width:619px)" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(function(){	
+	$('.all ol li').click(function(e) {
+        $(this).addClass('current').siblings().removeClass();//完成角标的工作
+		
+		$('.all ul li').eq($(this).index()).hide().stop().fadeIn().siblings().hide()
+		
+		num=$(this).index();
+    });
+
+	var num=0;
+	var timer=null;
+	
+	timer=setInterval(fn,2000)
+	
+	function fn(){	
+		num++
+		if(num>4){num=0}
+		//$('title').html(num)
+		
+        $('.all ol li').eq(num).addClass('current').siblings().removeClass();//完成角标的工作
+		$('.all ul li').eq(num).stop().hide().fadeIn().siblings().hide()
+	}
+
+})
+</script>
+
+
+
+</head>
+
+<body>
+<div id="header">
+	<h1><a href="index.html"><img src="images/logo.jpg" width="173" height="75" alt="" /></a></h1>
+</div>
+<div id="nav">
+	<span class="left"></span>
+    <ul>
+        <li><a href="#">网站首页</a></li>
+        <li><a href="#">公司新闻</a></li>
+        <li><a href="#">行业动态</a></li>
+        <li><a href="#">基地管理</a></li>
+        <li><a href="#">会员服务</a></li>
+        <li><a href="#">网上购物</a></li>
+        <li><a href="#">产品展示</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li class="noBg"><a href="#">ENGLISH</a></li>
+    </ul>
+	<span class="right"></span>
+</div>
+<div id="banner"><a href="#"><img src="images/banner.jpg" width="980" height="382" /></a>
+</div>
+
+
+<div class="all">
+	<div class="display">
+      <ul>
+      	<li class="current"><img src="images/taobao/01.jpg" width="490" height="170" /></li>
+      	<li><img src="images/taobao/02.jpg" width="490" height="170" /></li>
+      	<li><img src="images/taobao/03.jpg" width="490" height="170" /></li>
+      	<li><img src="images/taobao/04.jpg" width="490" height="170" /></li>
+      	<li><img src="images/taobao/05.jpg" width="490" height="170" /></li>
+      </ul>
+      <ol>
+      	<li class="current">1</li>
+      	<li>2</li>
+      	<li>3</li>
+      	<li>4</li>
+      	<li>5</li>
+      </ol>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="con">
+	<div class="up">
+   	  <ul>
+    	  <li>
+          	<h3><a href="detail.html">有机蔬菜</a></h3>
+            <p>主要通过自然降水、施用农家肥人工除草等传统的农...</p>
+        </li>
+    	  <li>
+          	<h3 style="background-position:-7px -30px;"><a href="#">有机蔬菜</a></h3>
+            <p>主要通过自然降水、施用农家肥人工除草等传统的农...</p>
+          </li>
+    	  <li>
+          	<h3 style="background-position:-7px -60px;"><a href="#">有机蔬菜</a></h3>
+            <p>主要通过自然降水、施用农家肥人工除草等传统的农...</p>
+          </li>
+    	  <li>
+          	<h3 style="background-position:0 -90px;"><a href="#">有机蔬菜</a></h3>
+            <p>主要通过自然降水、施用农家肥人工除草等传统的农...</p>
+          </li>
+    	</ul>
+  </div>
+	<div class="down">
+   	  <div class="down01">
+   		<div class="down_top">
+            	<h3><a href="#">关于我们</a></h3>
+              <span><a href="#"><img src="images/index_r10_c15.jpg" width="34" height="20" /></a></span>
+            </div>
+            
+          <dl>
+            <dt><a href="#"><img src="images/index_r2_c121212.jpg" width="96" height="82" /></a></dt>
+            <dd>
+            	绿色食品（北京）有限公司立志于有机事业的发展，坚持以人为本，走可持续发展的道路，从农田到餐桌，实行全过程监控体系，以优质的产品为更多的人提供健康的食品安...<a href="#">详细内容>></a>
+            </dd>
+          </dl>
+          
+        </div>
+   	  <div class="down02">
+       	<div class="down_top">
+            	<h3><a href="#">关于我们</a></h3>
+              <span><a href="#"><img src="images/index_r10_c15.jpg" width="34" height="20" /></a></span>
+            </div>
+        <ul>
+              <li>
+                  <a href="#"><img src="images/index_r2_c2111.jpg" /></a>
+                  <p><a href="#">(古道)纯牛奶</a></p>
+              </li>
+              <li>
+                  <a href="#"><img src="images/index_r2_c2111.jpg" /></a>
+                  <p><a href="#">(古道)纯牛奶</a></p>
+              </li>
+              <li class="nomargin">
+                  <a href="#"><img src="images/index_r2_c2111.jpg" /></a>
+                  <p><a href="#">(古道)纯牛奶</a></p>
+              </li>
+              
+            </ul>
+      </div>
+   	  <div class="down03">
+       	<div class="down_top">
+            	<h3><a href="#">关于我们</a></h3>
+            </div>
+        <p>
+            	地  址：北京市海淀区知春路未来大厦6层<br />
+     
+                邮  编：100191<br />
+
+                热线电话：010-62358888<br />
+                               
+                邮  箱：lssp@lssp.com<br />
+
+           		传  真：010-88636666
+              </p>
+      </div>
+  </div>
+</div>
+
+<div id="sub_nav">
+    <a href="#">网站首页</a> <span>|</span>
+    <a href="#">公司新闻</a> <span>|</span>
+    <a href="#">行业动态</a> <span>|</span>
+    <a href="#">基地管理</a> <span>|</span>
+    <a href="#">会员服务</a> <span>|</span>
+    <a href="#">网上购物</a> <span>|</span>
+    <a href="#">产品展示</a> <span>|</span>
+    <a href="#">关于我们</a>
+</div>
+<div id="footer">
+	<div class="footer_in">
+    	<p>
+        	电话：010-62358888　传真：010-88636666　客服电话：400-0809-560<br />
+
+绿色食品（北京）有限公司 版权所有 京ICP备11036362号　
+        </p>
+        <h2><a href="#"><img src="images/sub_logo.jpg" /></a></h2>
+    </div>
+</div>
+</body>
+</html>
