@@ -148,7 +148,12 @@ body{
 	padding: 70px 22px 0 26px;
 }
 .screen1 .aside .wei{
-	margin-top:20px;
+	margin-top:50px;
+	font-size:20px;
+}
+.screen1 .aside .weizi{
+	font-size:30px;
+	margin-top:50px;
 }
 .screen1.no .aside{
 	margin-top:-1000px;
