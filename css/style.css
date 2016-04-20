@@ -40,6 +40,7 @@ body{
 /*screen1*/
 .screen1{
 	position:relative;
+	overflow:hidden;
 }
 .screen1 .yinyue{
 	width:50px;
@@ -303,7 +304,7 @@ animation:dh 25s linear infinite;
 
 
 /*screen4*/
-.screen4{position:relative;}
+.screen4{position:relative; overflow:hidden;}
 
 .screen4 .title{
 	position: absolute;
@@ -368,7 +369,7 @@ animation:dh 25s linear infinite;
 .screen4 .con .all li{ float:left; cursor:pointer;}
 
 /*screen5*/
-.screen5{position:relative;}
+.screen5{position:relative; overflow:hidden;}
 .screen5 .title{
 	position: absolute;
 	left:50%;
@@ -456,7 +457,7 @@ animation:dh 25s linear infinite;
 }
 
 /*screen6*/
-.screen6{position:relative;}
+.screen6{position:relative; overflow:hidden;}
 
 .screen6 .title{
 	position: absolute;
