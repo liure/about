@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body,div,p,span,ul,li,dl,dt,dd,a,ol,input,img,h1,h2,h3,h4{ padding:0; margin:0; list-style:none; border:0;}
-body{ font-family:"宋体"; color:#616161; font-size:12px; background:url(../images/_r1_c1.jpg) no-repeat center 0;}
+body{ font-family:"宋体"; color:#616161; font-size:12px; background:url(../images/r1_c1.jpg) no-repeat center 0;}
 a{ color:#fff; text-decoration:none;}
 a:hover{ text-decoration:underline;}
 
@@ -22,7 +22,7 @@ a:hover{ text-decoration:underline;}
 /*con*/
 #con{ height:302px; width:980px;  margin:0 auto; margin-top:9px; background:#fff url(../images/index_r9_c3.jpg) no-repeat 0 0; padding-top:9px;}
 #con .up{ height:92px; border-bottom:1px solid #ccc;}
-#con .up li{ width:236px; height:84px; background:url(../images/_r2_c2.jpg); float:left; margin-right:6px;}
+#con .up li{ width:236px; height:84px; background:url(../images/r2_c2.jpg); float:left; margin-right:6px;}
 #con .up ul{ padding-left:9px; overflow:hidden;}
 #con .up li h3{ height:30px; width:104px; background:url(../images/jingling1.jpg) no-repeat -7px 0; margin-top:4px; margin-left:11px;}
 
@@ -54,7 +54,7 @@ a:hover{ text-decoration:underline;}
 
 
 /*subnav*/
-#sub_nav{ text-align:center; background:url(../images/_c16.jpg) repeat-x; width:980px; height:34px; margin:auto; line-height:34px; margin-top:10px; color:#fff; border:1px solid #ddd;}
+#sub_nav{ text-align:center; background:url(../images/c16.jpg) repeat-x; width:980px; height:34px; margin:auto; line-height:34px; margin-top:10px; color:#fff; border:1px solid #ddd;}
 /*footer*/
 #footer{ margin-top:1px; height:88px; border-bottom:3px solid #69ba17; background:url(../images/index_r17_c2.jpg) repeat-x;}
 .footer_in{ width:980px; height:88px; margin:0 auto;}
@@ -73,7 +73,7 @@ a:hover{ text-decoration:underline;}
 
 .list_con_r{ float:right; width:733px; height:100%; margin-right:11px;_display:inline;}
 .list_con_l p.center{ padding:0 10px; width:178px; line-height:20px;}
-.con_head{ height:50px; background:url(../images/_r1_c2.jpg);}
+.con_head{ height:50px; background:url(../images/r1_c2.jpg);}
 .con_head h3{ float:left; margin:17px 0 0 44px; _display:inline; font-size:14px; _margin-top:20px;}
 .con_head p{ float:right; width:212px; margin:20px 10px 0 0; _display:inline; _margin-top:23px;}
 
